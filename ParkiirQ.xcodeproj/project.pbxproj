@@ -48,6 +48,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		833C47AE2C59CADE007E0F55 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		C89838FE2C59C4C600216F05 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +74,7 @@
 		C89839092C59C4C600216F05 /* ParkiirQ */ = {
 			isa = PBXGroup;
 			children = (
+				833C47AE2C59CADE007E0F55 /* Components */,
 				833C47A72C59C841007E0F55 /* Utilities */,
 				C89839182C59C5FF00216F05 /* Views */,
 				C898390A2C59C4C600216F05 /* ParkiirQApp.swift */,

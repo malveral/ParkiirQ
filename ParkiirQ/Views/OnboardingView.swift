@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct OnboardingView: View {
+    @AppStorage("showOnboarding") var showOnboarding = true
+    var location = LocationRequest()
+    
     var body: some View {
         VStack(alignment: .center, spacing: 40) {
             Spacer()
@@ -23,14 +27,14 @@ struct OnboardingView: View {
             VStack(alignment: .leading, spacing: 30) {
                 FeatureItem(
                     icon: "parkingsign.circle",
-                    title: "Real-time parking information",
-                    description: "Know in real-time the parking situation on your location"
+                    title: "Informasi parkir terbaru",
+                    description: "Ketahui secara langsung kondisi parkir di tempat tujuan anda"
                 )
                 
                 FeatureItem(
                     icon: "ev.charger",
-                    title: "EV Charging location",
-                    description: "Find out if your destination has EV charging nearby"
+                    title: "Lokasi SPKLU",
+                    description: "Dapatkan informasi akurat mengenai lokasi SPKLU"
                 )
                 
                 FeatureItem(
@@ -47,13 +51,13 @@ struct OnboardingView: View {
                     .resizable()
                     .foregroundStyle(Color.accentColor)
                     .frame(width: 32, height: 32)
-                Text("ParkiirQ requires your exact location when using the app. Click continue to agree and start using ParkiirQ")
+                Text("ParkiirQ memerlukan lokasi akurat perangkat anda. Dengan menekan 'Selanjutnya', anda memberikan izin ParkiirQ untuk menggunakan lokasi anda")
                     .multilineTextAlignment(.center)
                     .font(.caption)
                     .foregroundStyle(Color.secondary)
                 
-                Button("Continue") {
-                    
+                Button("Selanjutnya") {
+                    location.requestAuthorization()
                 }
                 .font(.headline)
                 .padding(12)
@@ -63,8 +67,17 @@ struct OnboardingView: View {
                 .clipShape(.rect(cornerRadius: 10))
                 .padding(.top, 20)
             }
-        }.padding(.all, 40)
+        }
+        .padding(.all, 40)
+        .interactiveDismissDisabled()
+        .onReceive(NotificationCenter.default.publisher(for: .isLocationAuthorized)) {
+            object in
+            
+            let status = object.object as? Bool ?? false
+            showOnboarding = !status
+        }
     }
+    
     
     @ViewBuilder
     func FeatureItem(icon: String, title: String, description: String) -> some View {

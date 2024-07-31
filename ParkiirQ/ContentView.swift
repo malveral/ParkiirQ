@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    var location = LocationRequest()
+    @AppStorage("showOnboarding") var showOnboarding = true
+    @State var locationAuthorized = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            if !locationAuthorized {
+                Text("Tidak bisa mendapatkan akses lokasi")
+            } else {
+                ParkingMapView()
+            }
         }
-        .padding()
+        .onReceive(NotificationCenter.default.publisher(for: .isLocationAuthorized)) {
+            object in
+            locationAuthorized = object.object as? Bool ?? false
+        }
+        .onAppear {
+            locationAuthorized = location.isAuthorized
+            showOnboarding = !location.isAuthorized
+        }
+        .sheet(isPresented: $showOnboarding) {
+            OnboardingView()
+        }
     }
 }
 

@@ -16,6 +16,23 @@
 		C898390F2C59C4C800216F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898390E2C59C4C800216F05 /* Assets.xcassets */; };
 		C89839122C59C4C800216F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89839112C59C4C800216F05 /* Preview Assets.xcassets */; };
 		C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839192C59C6E300216F05 /* OnboardingView.swift */; };
+		C898391D2C59CF7200216F05 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898391C2C59CF7200216F05 /* LocationRequest.swift */; };
+		C898391F2C59D61900216F05 /* NotificationCenter+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898391E2C59D61900216F05 /* NotificationCenter+Name.swift */; };
+		C89839212C59D8E000216F05 /* ParkingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839202C59D8E000216F05 /* ParkingMapView.swift */; };
+		C89839232C59E02700216F05 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839222C59E02700216F05 /* LocationManager.swift */; };
+		C89839262C59E41E00216F05 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = C89839252C59E41E00216F05 /* Auth */; };
+		C89839282C59E41E00216F05 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = C89839272C59E41E00216F05 /* Functions */; };
+		C898392A2C59E41E00216F05 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = C89839292C59E41E00216F05 /* PostgREST */; };
+		C898392C2C59E41E00216F05 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = C898392B2C59E41E00216F05 /* Realtime */; };
+		C898392E2C59E41E00216F05 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = C898392D2C59E41E00216F05 /* Storage */; };
+		C89839302C59E42900216F05 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898392F2C59E42900216F05 /* Supabase.swift */; };
+		C89839332C59E57200216F05 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C89839322C59E57200216F05 /* Supabase */; };
+		C89839362C59E6E900216F05 /* Parking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839352C59E6E900216F05 /* Parking.swift */; };
+		C89839382C59FA5800216F05 /* ParkingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839372C59FA5800216F05 /* ParkingDetailView.swift */; };
+		C898393B2C59FB0000216F05 /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = C898393A2C59FB0000216F05 /* SwiftUINavigation */; };
+		C898393D2C59FB0000216F05 /* SwiftUINavigationCore in Frameworks */ = {isa = PBXBuildFile; productRef = C898393C2C59FB0000216F05 /* SwiftUINavigationCore */; };
+		C898393F2C5A218C00216F05 /* Double+twoDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898393E2C5A218C00216F05 /* Double+twoDigit.swift */; };
+		C89839412C5A29FF00216F05 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839402C5A29FF00216F05 /* ParkingSpot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +46,15 @@
 		C898390E2C59C4C800216F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C89839112C59C4C800216F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C89839192C59C6E300216F05 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C898391C2C59CF7200216F05 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		C898391E2C59D61900216F05 /* NotificationCenter+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Name.swift"; sourceTree = "<group>"; };
+		C89839202C59D8E000216F05 /* ParkingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingMapView.swift; sourceTree = "<group>"; };
+		C89839222C59E02700216F05 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C898392F2C59E42900216F05 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		C89839352C59E6E900216F05 /* Parking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parking.swift; sourceTree = "<group>"; };
+		C89839372C59FA5800216F05 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
+		C898393E2C5A218C00216F05 /* Double+twoDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+twoDigit.swift"; sourceTree = "<group>"; };
+		C89839402C5A29FF00216F05 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +62,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C898392A2C59E41E00216F05 /* PostgREST in Frameworks */,
+				C898393D2C59FB0000216F05 /* SwiftUINavigationCore in Frameworks */,
+				C89839282C59E41E00216F05 /* Functions in Frameworks */,
+				C89839332C59E57200216F05 /* Supabase in Frameworks */,
+				C89839262C59E41E00216F05 /* Auth in Frameworks */,
+				C898392E2C59E41E00216F05 /* Storage in Frameworks */,
+				C898393B2C59FB0000216F05 /* SwiftUINavigation in Frameworks */,
+				C898392C2C59E41E00216F05 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +82,10 @@
 				833C47A82C59C859007E0F55 /* ButtonStyleUtility.swift */,
 				833C47AA2C59C889007E0F55 /* SymbolUtility.swift */,
 				833C47AC2C59CA22007E0F55 /* DummyTestView.swift */,
+				C898391C2C59CF7200216F05 /* LocationRequest.swift */,
+				C898391E2C59D61900216F05 /* NotificationCenter+Name.swift */,
+				C89839222C59E02700216F05 /* LocationManager.swift */,
+				C898392F2C59E42900216F05 /* Supabase.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -65,6 +103,7 @@
 			children = (
 				C89839092C59C4C600216F05 /* ParkiirQ */,
 				C89839082C59C4C600216F05 /* Products */,
+				C89839312C59E57200216F05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +118,7 @@
 		C89839092C59C4C600216F05 /* ParkiirQ */ = {
 			isa = PBXGroup;
 			children = (
+				C89839342C59E6E200216F05 /* Models */,
 				833C47AE2C59CADE007E0F55 /* Components */,
 				833C47A72C59C841007E0F55 /* Utilities */,
 				C89839182C59C5FF00216F05 /* Views */,
@@ -102,8 +142,27 @@
 			isa = PBXGroup;
 			children = (
 				C89839192C59C6E300216F05 /* OnboardingView.swift */,
+				C89839202C59D8E000216F05 /* ParkingMapView.swift */,
+				C89839372C59FA5800216F05 /* ParkingDetailView.swift */,
+				C898393E2C5A218C00216F05 /* Double+twoDigit.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C89839312C59E57200216F05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C89839342C59E6E200216F05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C89839352C59E6E900216F05 /* Parking.swift */,
+				C89839402C5A29FF00216F05 /* ParkingSpot.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +181,16 @@
 			dependencies = (
 			);
 			name = ParkiirQ;
+			packageProductDependencies = (
+				C89839252C59E41E00216F05 /* Auth */,
+				C89839272C59E41E00216F05 /* Functions */,
+				C89839292C59E41E00216F05 /* PostgREST */,
+				C898392B2C59E41E00216F05 /* Realtime */,
+				C898392D2C59E41E00216F05 /* Storage */,
+				C89839322C59E57200216F05 /* Supabase */,
+				C898393A2C59FB0000216F05 /* SwiftUINavigation */,
+				C898393C2C59FB0000216F05 /* SwiftUINavigationCore */,
+			);
 			productName = ParkiirQ;
 			productReference = C89839072C59C4C600216F05 /* ParkiirQ.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +219,10 @@
 				Base,
 			);
 			mainGroup = C89838FE2C59C4C600216F05;
+			packageReferences = (
+				C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+			);
 			productRefGroup = C89839082C59C4C600216F05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -176,12 +249,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C898391F2C59D61900216F05 /* NotificationCenter+Name.swift in Sources */,
+				C89839302C59E42900216F05 /* Supabase.swift in Sources */,
 				833C47AB2C59C889007E0F55 /* SymbolUtility.swift in Sources */,
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
+				C89839232C59E02700216F05 /* LocationManager.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,
-                C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
-                C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
+				C898391D2C59CF7200216F05 /* LocationRequest.swift in Sources */,
+				C89839362C59E6E900216F05 /* Parking.swift in Sources */,
+				C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
+				C89839382C59FA5800216F05 /* ParkingDetailView.swift in Sources */,
+				C898393F2C5A218C00216F05 /* Double+twoDigit.swift in Sources */,
+				C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
+				C89839212C59D8E000216F05 /* ParkingMapView.swift in Sources */,
+				C89839412C5A29FF00216F05 /* ParkingSpot.swift in Sources */,
 				C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +472,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+		C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C89839252C59E41E00216F05 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		C89839272C59E41E00216F05 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		C89839292C59E41E00216F05 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		C898392B2C59E41E00216F05 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		C898392D2C59E41E00216F05 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		C89839322C59E57200216F05 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+		C898393A2C59FB0000216F05 /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+		C898393C2C59FB0000216F05 /* SwiftUINavigationCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigationCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C89838FF2C59C4C600216F05 /* Project object */;
 }

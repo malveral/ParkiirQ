@@ -13,13 +13,15 @@ import SwiftUINavigation
 struct ParkingMapView: View {
     
     @State var location = LocationManager()
+    
     @State var position: MapCameraPosition = .userLocation(
         followsHeading: true, fallback: .automatic
     )
     
-    @State var search = ""
+    @State var showMainSheet = false
     @State var selectedParkingLot: Parking?
     @State var parkingLots: [Parking] = []
+    @State var showReportView = false
     
     
     var body: some View {
@@ -39,7 +41,29 @@ struct ParkingMapView: View {
         }
         .navigationTitle("ParkiirQ")
         .navigationBarTitleDisplayMode(.inline)
-        .searchable(text: $search)
+        .onReceive(NotificationCenter.default.publisher(for: .wantsToReportIssue)) { object in
+            print("Received")
+            let result = object.object as? Bool ?? false
+            showMainSheet = !result
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                showReportView = result
+            }
+        }
+        .onChange(of: location.firstLoadFinished) {
+            showMainSheet = location.firstLoadFinished
+        }
+        .onChange(of: selectedParkingLot) {
+            showMainSheet = selectedParkingLot == nil
+        }
+        .navigationDestination(isPresented: $showReportView) {
+            ReportIssueView()
+        }
+        .sheet(isPresented: $showMainSheet) {
+            MainBottomDrawerView(lastLocation: location.userCoords) { parking in
+                self.showMainSheet = false
+                self.selectedParkingLot = parking
+            }
+        }
         .sheet(item: $selectedParkingLot) { parkingLot in
             ParkingDetailView(
                 parking: parkingLot,
@@ -47,6 +71,11 @@ struct ParkingMapView: View {
             )
         }
         .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2){
+                if location.firstLoadFinished {
+                    showMainSheet = true
+                }
+            }
             Task {
                 await getParkingLots()
                 // await subscribeToChanges()
@@ -79,8 +108,14 @@ struct ParkingMapView: View {
         Annotation(parking.title, coordinate: parking.coordinate) {
             Image(systemName: "parkingsign.circle.fill")
                 .font(.title)
-                .foregroundStyle(Color.accentColor)
+                .foregroundStyle(
+                    parking.hasSpklu
+                    ? Color.green
+                    : Color.blue,
+                    Color(.systemBackground)
+                )
                 .onTapGesture {
+                    self.showMainSheet = false
                     self.selectedParkingLot = parking
                 }
         }.tag("parkinglot-\(parking.id)")
@@ -88,14 +123,10 @@ struct ParkingMapView: View {
     
     func getParkingLots() async {
         do {
-            
-            let parkingLots: [Parking] =  try await supabase
-                .from("parkings")
-                .select()
-                .execute()
-                .value
+            let parkingLots: [Parking] =  try await Parking.fetchAll()
             
             await MainActor.run {
+                
                 self.parkingLots = parkingLots
             }
             

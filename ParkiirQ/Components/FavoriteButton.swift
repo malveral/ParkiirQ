@@ -24,7 +24,7 @@ struct FavoriteButton: View {
             Image(systemName: iconName)
                 .padding(10)
                 .background(Color("GrayButton"))
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                .clipShape(Circle())
                 .foregroundStyle(Color.blue)
 
             Text(name)

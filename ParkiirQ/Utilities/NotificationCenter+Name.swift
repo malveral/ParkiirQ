@@ -9,4 +9,5 @@ import Foundation
 
 extension Notification.Name {
     static let isLocationAuthorized = Notification.Name("isLocationAuthorized")
+    static let wantsToReportIssue = Notification.Name("wansToReportIssue")
 }

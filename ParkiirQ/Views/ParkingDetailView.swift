@@ -9,8 +9,15 @@ import SwiftUI
 import MapKit
 
 struct ParkingDetailView: View {
+    @AppStorage("favorites") var favorites = FavoritedLocation()
+    
     var parking: Parking
+    
     var lastLocation: CLLocation
+    
+    var isFavorited: Bool {
+        return favorites.contains(parking.id)
+    }
     
     var distanceFromUser: Double {
         
@@ -59,13 +66,16 @@ struct ParkingDetailView: View {
                         .clipShape(.rect(cornerRadius: 10))
                         
                         Button {
-                            
+                            setFavorited()
                         } label: {
-                            Label("Tambah ke favorit", systemImage: "star")
+                            Label(isFavorited
+                                  ? "Hapus dari favorit"
+                                  : "Tambah ke favorit",
+                                  systemImage: isFavorited ? "star.fill" : "star")
                         }
                         .font(.headline)
                         .padding(12)
-                        .foregroundStyle(Color(.secondaryLabel))
+                        .foregroundStyle(isFavorited ? .accent : Color(.secondaryLabel))
                         .background(Color(.secondarySystemBackground))
                         .clipShape(.rect(cornerRadius: 10))
                     }
@@ -87,6 +97,7 @@ struct ParkingDetailView: View {
                                 }
                             }
                         }
+                        
                         HStack {
                             Image(systemName: "point.topleft.down.to.point.bottomright.filled.curvepath")
                                 .foregroundStyle(Color.accentColor)
@@ -102,13 +113,24 @@ struct ParkingDetailView: View {
                         } else {
                             ForEach(parkingSpots) { spot in
                                 HStack {
-                                    Label(spot.code, 
+                                    Label(spot.code,
                                           systemImage: spot.available ? "checkmark" : "xmark")
                                     Spacer()
                                     Text(spot.shortInfo)
                                         .foregroundStyle(Color.secondary)
                                 }
                             }
+                        }
+                    }
+                    
+                    Section {
+                        ShareLink(
+                            item: URL(string: "http://maps.apple.com/?daddr=\( parking.lat),\(parking.long)")!,
+                            subject: Text("Saya sedang disini"),
+                            message: Text("Saya sedang berada di parkiran \(parking.title): \(URL(string: "http://maps.apple.com/?daddr=\( parking.lat),\(parking.long)")!)"),
+                            preview: SharePreview("Bagikan lokasi parkir ini", image: Image("mappin_share"))
+                        ) {
+                            Label("Bagikan tempat parkir", systemImage: SymbolUtilities().getSymbol(.share))
                         }
                     }
                 }
@@ -120,6 +142,17 @@ struct ParkingDetailView: View {
         }
         .presentationDragIndicator(.visible)
         .presentationDetents([.medium])
+    }
+    
+    func setFavorited() {
+        let index = favorites.firstIndex(of: parking.id)
+        
+        guard let index else {
+            favorites.append(parking.id)
+            return
+        }
+        
+        favorites.remove(at: index)
     }
     
     func goToParking() {

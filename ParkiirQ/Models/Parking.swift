@@ -8,7 +8,7 @@
 import Foundation
 import MapKit
 
-struct Parking: Identifiable, Codable {
+struct Parking: Identifiable, Codable, Equatable, Hashable {
     let id: Int
     let lat: Double
     let long: Double
@@ -29,6 +29,18 @@ struct Parking: Identifiable, Codable {
         case long = "long"
         case title = "title"
         case spkluInfo = "spklu_info"
+    }
+}
+
+extension Parking {
+    static func fetchAll() async throws -> [Parking] {
+        let parkingLots: [Parking] =  try await supabase
+            .from("parkings")
+            .select()
+            .execute()
+            .value
+        
+        return parkingLots
     }
 }
 

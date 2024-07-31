@@ -12,7 +12,6 @@
 		833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47AC2C59CA22007E0F55 /* DummyTestView.swift */; };
 		833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */; };
 		833C47B62C59CFCA007E0F55 /* ColorWithHexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */; };
-		833C47B82C59D6E7007E0F55 /* DummyBottomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */; };
 		83E44FD62C5A0E6F00BB8EDC /* ReportIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */; };
 		C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390A2C59C4C600216F05 /* ParkiirQApp.swift */; };
 		C898390D2C59C4C600216F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390C2C59C4C600216F05 /* ContentView.swift */; };
@@ -36,6 +35,10 @@
 		C898393D2C59FB0000216F05 /* SwiftUINavigationCore in Frameworks */ = {isa = PBXBuildFile; productRef = C898393C2C59FB0000216F05 /* SwiftUINavigationCore */; };
 		C898393F2C5A218C00216F05 /* Double+twoDigit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898393E2C5A218C00216F05 /* Double+twoDigit.swift */; };
 		C89839412C5A29FF00216F05 /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839402C5A29FF00216F05 /* ParkingSpot.swift */; };
+		C89839432C5A356F00216F05 /* FavoritedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839422C5A356F00216F05 /* FavoritedLocation.swift */; };
+		C89839462C5A373900216F05 /* MainBottomDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839452C5A373900216F05 /* MainBottomDrawerView.swift */; };
+		C89839482C5A422C00216F05 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839472C5A422C00216F05 /* SharingViewController.swift */; };
+		C898394A2C5A4C2300216F05 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839492C5A4C2300216F05 /* Issue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +47,6 @@
 		833C47AC2C59CA22007E0F55 /* DummyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTestView.swift; sourceTree = "<group>"; };
 		833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexCode.swift; sourceTree = "<group>"; };
-		833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBottomDrawer.swift; sourceTree = "<group>"; };
 		83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssueView.swift; sourceTree = "<group>"; };
 		C89839072C59C4C600216F05 /* ParkiirQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkiirQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C898390A2C59C4C600216F05 /* ParkiirQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkiirQApp.swift; sourceTree = "<group>"; };
@@ -61,6 +63,10 @@
 		C89839372C59FA5800216F05 /* ParkingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingDetailView.swift; sourceTree = "<group>"; };
 		C898393E2C5A218C00216F05 /* Double+twoDigit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+twoDigit.swift"; sourceTree = "<group>"; };
 		C89839402C5A29FF00216F05 /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
+		C89839422C5A356F00216F05 /* FavoritedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritedLocation.swift; sourceTree = "<group>"; };
+		C89839452C5A373900216F05 /* MainBottomDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomDrawerView.swift; sourceTree = "<group>"; };
+		C89839472C5A422C00216F05 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
+		C89839492C5A4C2300216F05 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 				C898391E2C59D61900216F05 /* NotificationCenter+Name.swift */,
 				C89839222C59E02700216F05 /* LocationManager.swift */,
 				C898392F2C59E42900216F05 /* Supabase.swift */,
+				C89839472C5A422C00216F05 /* SharingViewController.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -100,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */,
-				833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -108,6 +114,7 @@
 		833C47B42C59CFB6007E0F55 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				C898393E2C5A218C00216F05 /* Double+twoDigit.swift */,
 				833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */,
 			);
 			path = Extensions;
@@ -160,9 +167,8 @@
 				C89839192C59C6E300216F05 /* OnboardingView.swift */,
 				C89839202C59D8E000216F05 /* ParkingMapView.swift */,
 				C89839372C59FA5800216F05 /* ParkingDetailView.swift */,
-				C898393E2C5A218C00216F05 /* Double+twoDigit.swift */,
 				83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */,
-
+				C89839452C5A373900216F05 /* MainBottomDrawerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +185,8 @@
 			children = (
 				C89839352C59E6E900216F05 /* Parking.swift */,
 				C89839402C5A29FF00216F05 /* ParkingSpot.swift */,
+				C89839422C5A356F00216F05 /* FavoritedLocation.swift */,
+				C89839492C5A4C2300216F05 /* Issue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -268,18 +276,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C898391F2C59D61900216F05 /* NotificationCenter+Name.swift in Sources */,
+				C898394A2C5A4C2300216F05 /* Issue.swift in Sources */,
 				C89839302C59E42900216F05 /* Supabase.swift in Sources */,
 				833C47AB2C59C889007E0F55 /* SymbolUtility.swift in Sources */,
-				833C47B82C59D6E7007E0F55 /* DummyBottomDrawer.swift in Sources */,
 				83E44FD62C5A0E6F00BB8EDC /* ReportIssueView.swift in Sources */,
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
 				C89839232C59E02700216F05 /* LocationManager.swift in Sources */,
+				C89839432C5A356F00216F05 /* FavoritedLocation.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,
 				C898391D2C59CF7200216F05 /* LocationRequest.swift in Sources */,
 				C89839362C59E6E900216F05 /* Parking.swift in Sources */,
 				C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
+				C89839482C5A422C00216F05 /* SharingViewController.swift in Sources */,
 				C89839382C59FA5800216F05 /* ParkingDetailView.swift in Sources */,
+				C89839462C5A373900216F05 /* MainBottomDrawerView.swift in Sources */,
 				C898393F2C5A218C00216F05 /* Double+twoDigit.swift in Sources */,
 				C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
 				C89839212C59D8E000216F05 /* ParkingMapView.swift in Sources */,

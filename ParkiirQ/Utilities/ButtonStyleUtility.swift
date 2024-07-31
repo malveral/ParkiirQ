@@ -51,8 +51,7 @@ struct DefaultActionButtonStyle: ButtonStyle {
         Button("Report an Issue") {
         }
         .buttonStyle(ButtonStyleUtility().getDefaultActionStyle())
-        
-        FavoriteButton("Park 1")
     }
     
 }
+

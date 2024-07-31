@@ -12,6 +12,7 @@
 		833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47AC2C59CA22007E0F55 /* DummyTestView.swift */; };
 		833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */; };
 		833C47B62C59CFCA007E0F55 /* ColorWithHexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */; };
+		833C47B82C59D6E7007E0F55 /* DummyBottomDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */; };
 		C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390A2C59C4C600216F05 /* ParkiirQApp.swift */; };
 		C898390D2C59C4C600216F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390C2C59C4C600216F05 /* ContentView.swift */; };
 		C898390F2C59C4C800216F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898390E2C59C4C800216F05 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		833C47AC2C59CA22007E0F55 /* DummyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTestView.swift; sourceTree = "<group>"; };
 		833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexCode.swift; sourceTree = "<group>"; };
+		833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyBottomDrawer.swift; sourceTree = "<group>"; };
 		C89839072C59C4C600216F05 /* ParkiirQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkiirQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C898390A2C59C4C600216F05 /* ParkiirQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkiirQApp.swift; sourceTree = "<group>"; };
 		C898390C2C59C4C600216F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */,
+				833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				833C47AB2C59C889007E0F55 /* SymbolUtility.swift in Sources */,
+				833C47B82C59D6E7007E0F55 /* DummyBottomDrawer.swift in Sources */,
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,

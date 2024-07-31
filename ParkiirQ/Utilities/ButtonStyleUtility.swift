@@ -38,20 +38,34 @@ struct DefaultActionButtonStyle: ButtonStyle {
             .fontWeight(.medium)
             .padding()
             .frame(maxWidth:.infinity)
-            .background(Color.white)
+            .background(Color.gray)
             .foregroundStyle(.blue)
-            .cornerRadius(10)
+            .cornerRadius(8)
             .opacity(configuration.isPressed ? 0.8 : 1.0)
     }
 }
 
-
-
+struct FavoriteButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .fontWeight(.medium)
+            .padding()
+            .frame(maxWidth:.infinity)
+            .background(Color.gray)
+            .foregroundStyle(.blue)
+            .cornerRadius(8)
+            .opacity(configuration.isPressed ? 0.8 : 1.0)
+    }
+}
 
 #Preview {
     
-    Button("Report Issue") {
+    VStack {
+        Button("Report Issue") {
+        }
+        .buttonStyle(ButtonStyleUtility().getDefaultActionStyle())
+        
+        FavoriteButton("Park 1")
     }
-    .buttonStyle(ButtonStyleUtility().getDefaultActionStyle())
     
 }

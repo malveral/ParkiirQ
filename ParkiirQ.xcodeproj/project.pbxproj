@@ -13,6 +13,16 @@
 		833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */; };
 		833C47B62C59CFCA007E0F55 /* ColorWithHexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */; };
 		83E44FD62C5A0E6F00BB8EDC /* ReportIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */; };
+		83E44FDA2C5A542400BB8EDC /* ParkingSlotActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FD92C5A542400BB8EDC /* ParkingSlotActivity.swift */; };
+		83E44FDC2C5A55C300BB8EDC /* ParkingSlotAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FDB2C5A55C300BB8EDC /* ParkingSlotAttribute.swift */; };
+		83E44FE32C5A5EB000BB8EDC /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E44FE22C5A5EB000BB8EDC /* WidgetKit.framework */; };
+		83E44FE52C5A5EB000BB8EDC /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E44FE42C5A5EB000BB8EDC /* SwiftUI.framework */; };
+		83E44FE82C5A5EB000BB8EDC /* ParkingSlotActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FE72C5A5EB000BB8EDC /* ParkingSlotActivityBundle.swift */; };
+		83E44FEA2C5A5EB000BB8EDC /* ParkingSlotActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FE92C5A5EB000BB8EDC /* ParkingSlotActivityLiveActivity.swift */; };
+		83E44FEC2C5A5EB000BB8EDC /* ParkingSlotActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FEB2C5A5EB000BB8EDC /* ParkingSlotActivity.swift */; };
+		83E44FEE2C5A5EB000BB8EDC /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E44FED2C5A5EB000BB8EDC /* AppIntent.swift */; };
+		83E44FF02C5A5EB100BB8EDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E44FEF2C5A5EB100BB8EDC /* Assets.xcassets */; };
+		83E44FF42C5A5EB100BB8EDC /* ParkingSlotActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 83E44FE12C5A5EB000BB8EDC /* ParkingSlotActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390A2C59C4C600216F05 /* ParkiirQApp.swift */; };
 		C898390D2C59C4C600216F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390C2C59C4C600216F05 /* ContentView.swift */; };
 		C898390F2C59C4C800216F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898390E2C59C4C800216F05 /* Assets.xcassets */; };
@@ -43,6 +53,30 @@
 		C8A0C7202C5A5A2500E225EC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C8A0C71F2C5A5A2500E225EC /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		83E44FF22C5A5EB100BB8EDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C89838FF2C59C4C600216F05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E44FE02C5A5EB000BB8EDC;
+			remoteInfo = ParkingSlotActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83E44FF82C5A5EB100BB8EDC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83E44FF42C5A5EB100BB8EDC /* ParkingSlotActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		833C47A82C59C859007E0F55 /* ButtonStyleUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyleUtility.swift; sourceTree = "<group>"; };
 		833C47AA2C59C889007E0F55 /* SymbolUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolUtility.swift; sourceTree = "<group>"; };
@@ -50,6 +84,17 @@
 		833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexCode.swift; sourceTree = "<group>"; };
 		83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIssueView.swift; sourceTree = "<group>"; };
+		83E44FD92C5A542400BB8EDC /* ParkingSlotActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotActivity.swift; sourceTree = "<group>"; };
+		83E44FDB2C5A55C300BB8EDC /* ParkingSlotAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotAttribute.swift; sourceTree = "<group>"; };
+		83E44FE12C5A5EB000BB8EDC /* ParkingSlotActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ParkingSlotActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E44FE22C5A5EB000BB8EDC /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		83E44FE42C5A5EB000BB8EDC /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		83E44FE72C5A5EB000BB8EDC /* ParkingSlotActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotActivityBundle.swift; sourceTree = "<group>"; };
+		83E44FE92C5A5EB000BB8EDC /* ParkingSlotActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotActivityLiveActivity.swift; sourceTree = "<group>"; };
+		83E44FEB2C5A5EB000BB8EDC /* ParkingSlotActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlotActivity.swift; sourceTree = "<group>"; };
+		83E44FED2C5A5EB000BB8EDC /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		83E44FEF2C5A5EB100BB8EDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83E44FF12C5A5EB100BB8EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C89839072C59C4C600216F05 /* ParkiirQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkiirQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C898390A2C59C4C600216F05 /* ParkiirQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkiirQApp.swift; sourceTree = "<group>"; };
 		C898390C2C59C4C600216F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +118,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		83E44FDE2C5A5EB000BB8EDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E44FE52C5A5EB000BB8EDC /* SwiftUI.framework in Frameworks */,
+				83E44FE32C5A5EB000BB8EDC /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C89839042C59C4C600216F05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -111,6 +165,10 @@
 			isa = PBXGroup;
 			children = (
 				833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */,
+				833C47B72C59D6E7007E0F55 /* DummyBottomDrawer.swift */,
+				83E44FD92C5A542400BB8EDC /* ParkingSlotActivity.swift */,
+				83E44FDB2C5A55C300BB8EDC /* ParkingSlotAttribute.swift */,
+
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -124,10 +182,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		83E44FE62C5A5EB000BB8EDC /* ParkingSlotActivity */ = {
+			isa = PBXGroup;
+			children = (
+				83E44FE72C5A5EB000BB8EDC /* ParkingSlotActivityBundle.swift */,
+				83E44FE92C5A5EB000BB8EDC /* ParkingSlotActivityLiveActivity.swift */,
+				83E44FEB2C5A5EB000BB8EDC /* ParkingSlotActivity.swift */,
+				83E44FED2C5A5EB000BB8EDC /* AppIntent.swift */,
+				83E44FEF2C5A5EB100BB8EDC /* Assets.xcassets */,
+				83E44FF12C5A5EB100BB8EDC /* Info.plist */,
+			);
+			path = ParkingSlotActivity;
+			sourceTree = "<group>";
+		};
 		C89838FE2C59C4C600216F05 = {
 			isa = PBXGroup;
 			children = (
 				C89839092C59C4C600216F05 /* ParkiirQ */,
+				83E44FE62C5A5EB000BB8EDC /* ParkingSlotActivity */,
 				C89839082C59C4C600216F05 /* Products */,
 				C89839312C59E57200216F05 /* Frameworks */,
 			);
@@ -137,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				C89839072C59C4C600216F05 /* ParkiirQ.app */,
+				83E44FE12C5A5EB000BB8EDC /* ParkingSlotActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +244,7 @@
 				C89839192C59C6E300216F05 /* OnboardingView.swift */,
 				C89839202C59D8E000216F05 /* ParkingMapView.swift */,
 				C89839372C59FA5800216F05 /* ParkingDetailView.swift */,
-				83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */,
+				83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */, 
 				C89839452C5A373900216F05 /* MainBottomDrawerView.swift */,
 				C8A0C71C2C5A569300E225EC /* BeaconListenerView.swift */,
 			);
@@ -181,6 +254,8 @@
 		C89839312C59E57200216F05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83E44FE22C5A5EB000BB8EDC /* WidgetKit.framework */,
+				83E44FE42C5A5EB000BB8EDC /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -199,6 +274,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		83E44FE02C5A5EB000BB8EDC /* ParkingSlotActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E44FF52C5A5EB100BB8EDC /* Build configuration list for PBXNativeTarget "ParkingSlotActivityExtension" */;
+			buildPhases = (
+				83E44FDD2C5A5EB000BB8EDC /* Sources */,
+				83E44FDE2C5A5EB000BB8EDC /* Frameworks */,
+				83E44FDF2C5A5EB000BB8EDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParkingSlotActivityExtension;
+			productName = ParkingSlotActivityExtension;
+			productReference = 83E44FE12C5A5EB000BB8EDC /* ParkingSlotActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C89839062C59C4C600216F05 /* ParkiirQ */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C89839152C59C4C800216F05 /* Build configuration list for PBXNativeTarget "ParkiirQ" */;
@@ -206,10 +298,12 @@
 				C89839032C59C4C600216F05 /* Sources */,
 				C89839042C59C4C600216F05 /* Frameworks */,
 				C89839052C59C4C600216F05 /* Resources */,
+				83E44FF82C5A5EB100BB8EDC /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83E44FF32C5A5EB100BB8EDC /* PBXTargetDependency */,
 			);
 			name = ParkiirQ;
 			packageProductDependencies = (
@@ -237,6 +331,9 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					83E44FE02C5A5EB000BB8EDC = {
+						CreatedOnToolsVersion = 15.4;
+					};
 					C89839062C59C4C600216F05 = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -261,11 +358,20 @@
 			projectRoot = "";
 			targets = (
 				C89839062C59C4C600216F05 /* ParkiirQ */,
+				83E44FE02C5A5EB000BB8EDC /* ParkingSlotActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		83E44FDF2C5A5EB000BB8EDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E44FF02C5A5EB100BB8EDC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C89839052C59C4C600216F05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -278,6 +384,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		83E44FDD2C5A5EB000BB8EDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E44FEC2C5A5EB000BB8EDC /* ParkingSlotActivity.swift in Sources */,
+				83E44FEE2C5A5EB000BB8EDC /* AppIntent.swift in Sources */,
+				83E44FEA2C5A5EB000BB8EDC /* ParkingSlotActivityLiveActivity.swift in Sources */,
+				83E44FE82C5A5EB000BB8EDC /* ParkingSlotActivityBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C89839032C59C4C600216F05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,11 +403,14 @@
 				C898394A2C5A4C2300216F05 /* Issue.swift in Sources */,
 				C89839302C59E42900216F05 /* Supabase.swift in Sources */,
 				833C47AB2C59C889007E0F55 /* SymbolUtility.swift in Sources */,
+				83E44FDA2C5A542400BB8EDC /* ParkingSlotActivity.swift in Sources */,
+				833C47B82C59D6E7007E0F55 /* DummyBottomDrawer.swift in Sources */,
 				83E44FD62C5A0E6F00BB8EDC /* ReportIssueView.swift in Sources */,
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
 				C89839232C59E02700216F05 /* LocationManager.swift in Sources */,
 				C89839432C5A356F00216F05 /* FavoritedLocation.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
+				83E44FDC2C5A55C300BB8EDC /* ParkingSlotAttribute.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,
 				C898391D2C59CF7200216F05 /* LocationRequest.swift in Sources */,
 				C89839362C59E6E900216F05 /* Parking.swift in Sources */,
@@ -310,7 +430,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		83E44FF32C5A5EB100BB8EDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E44FE02C5A5EB000BB8EDC /* ParkingSlotActivityExtension */;
+			targetProxy = 83E44FF22C5A5EB100BB8EDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		83E44FF62C5A5EB100BB8EDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V383GK4HDH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingSlotActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ParkingSlotActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malvera.ParkiirQ.ParkingSlotActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83E44FF72C5A5EB100BB8EDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V383GK4HDH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ParkingSlotActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ParkingSlotActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.malvera.ParkiirQ.ParkingSlotActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C89839132C59C4C800216F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +615,7 @@
 		C89839162C59C4C800216F05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -442,6 +625,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find parking lots nearby";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +647,7 @@
 		C89839172C59C4C800216F05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +657,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find parking lots nearby";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,6 +679,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		83E44FF52C5A5EB100BB8EDC /* Build configuration list for PBXNativeTarget "ParkingSlotActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E44FF62C5A5EB100BB8EDC /* Debug */,
+				83E44FF72C5A5EB100BB8EDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C89839022C59C4C600216F05 /* Build configuration list for PBXProject "ParkiirQ" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

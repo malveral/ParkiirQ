@@ -26,6 +26,9 @@ struct ParkingMapView: View {
     
     var body: some View {
         ZStack {
+            BeaconListenerView() {
+                showMainSheet = true
+            }
             Map(position: $position) {
                 UserAnnotation()
                 ForEach(parkingLots) { parking in
@@ -40,6 +43,10 @@ struct ParkingMapView: View {
             }
         }
         .navigationTitle("ParkiirQ")
+        .toolbarBackground(
+            Color(.secondarySystemBackground),
+            for: .navigationBar
+        )
         .navigationBarTitleDisplayMode(.inline)
         .onReceive(NotificationCenter.default.publisher(for: .wantsToReportIssue)) { object in
             print("Received")

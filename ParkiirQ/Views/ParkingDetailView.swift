@@ -7,9 +7,12 @@
 
 import SwiftUI
 import MapKit
+import Supabase
 
 struct ParkingDetailView: View {
     @AppStorage("favorites") var favorites = FavoritedLocation()
+    
+    @State var pgChannel: RealtimeChannelV2?
     
     var parking: Parking
     
@@ -20,7 +23,6 @@ struct ParkingDetailView: View {
     }
     
     var distanceFromUser: Double {
-        
         return CLLocation(
             latitude: parking.lat,
             longitude: parking.long
@@ -76,7 +78,7 @@ struct ParkingDetailView: View {
                         .font(.headline)
                         .padding(12)
                         .foregroundStyle(isFavorited ? .accent : Color(.secondaryLabel))
-                        .background(Color(.secondarySystemBackground))
+                        .background(Color(.tertiarySystemFill))
                         .clipShape(.rect(cornerRadius: 10))
                     }
                 }
@@ -139,9 +141,43 @@ struct ParkingDetailView: View {
         }
         .task {
             await getAvailableSpot()
+            if pgChannel == nil {
+                await subscribeToChanges()
+            }
+        }
+        .onDisappear {
+            Task {
+                print("PG Channel unsubscribe")
+                await pgChannel?.unsubscribe()
+                pgChannel = nil
+            }
         }
         .presentationDragIndicator(.visible)
         .presentationDetents([.medium])
+    }
+    
+    func subscribeToChanges() async {
+        print("Subscribing")
+        
+        self.pgChannel = supabase.channel("ibeaconsim")
+        
+        let changeStream = pgChannel?.postgresChange(
+            UpdateAction.self,
+            schema: "public",
+            table: "parking_spots"
+        )
+        
+        Task {
+            if let stream = changeStream {
+                for await _ in stream {
+                    await getAvailableSpot()
+                    print("Change detected")
+                }
+            }
+        }
+        
+        await pgChannel?.subscribe()
+        
     }
     
     func setFavorited() {
@@ -181,7 +217,7 @@ struct ParkingDetailView: View {
             }
             
         } catch {
-            print("Fail to get parking lots")
+            print("Fail to get parking lots", error.localizedDescription)
         }
     }
 }

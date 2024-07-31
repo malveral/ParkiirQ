@@ -39,6 +39,8 @@
 		C89839462C5A373900216F05 /* MainBottomDrawerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839452C5A373900216F05 /* MainBottomDrawerView.swift */; };
 		C89839482C5A422C00216F05 /* SharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839472C5A422C00216F05 /* SharingViewController.swift */; };
 		C898394A2C5A4C2300216F05 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839492C5A4C2300216F05 /* Issue.swift */; };
+		C8A0C71D2C5A569300E225EC /* BeaconListenerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A0C71C2C5A569300E225EC /* BeaconListenerView.swift */; };
+		C8A0C7202C5A5A2500E225EC /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C8A0C71F2C5A5A2500E225EC /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,7 @@
 		C89839452C5A373900216F05 /* MainBottomDrawerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBottomDrawerView.swift; sourceTree = "<group>"; };
 		C89839472C5A422C00216F05 /* SharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingViewController.swift; sourceTree = "<group>"; };
 		C89839492C5A4C2300216F05 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		C8A0C71C2C5A569300E225EC /* BeaconListenerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconListenerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8A0C7202C5A5A2500E225EC /* SwiftyJSON in Frameworks */,
 				C898392A2C59E41E00216F05 /* PostgREST in Frameworks */,
 				C898393D2C59FB0000216F05 /* SwiftUINavigationCore in Frameworks */,
 				C89839282C59E41E00216F05 /* Functions in Frameworks */,
@@ -169,6 +173,7 @@
 				C89839372C59FA5800216F05 /* ParkingDetailView.swift */,
 				83E44FD52C5A0E6F00BB8EDC /* ReportIssueView.swift */,
 				C89839452C5A373900216F05 /* MainBottomDrawerView.swift */,
+				C8A0C71C2C5A569300E225EC /* BeaconListenerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				C89839322C59E57200216F05 /* Supabase */,
 				C898393A2C59FB0000216F05 /* SwiftUINavigation */,
 				C898393C2C59FB0000216F05 /* SwiftUINavigationCore */,
+				C8A0C71F2C5A5A2500E225EC /* SwiftyJSON */,
 			);
 			productName = ParkiirQ;
 			productReference = C89839072C59C4C600216F05 /* ParkiirQ.app */;
@@ -248,6 +254,7 @@
 			packageReferences = (
 				C89839242C59E41E00216F05 /* XCRemoteSwiftPackageReference "supabase-swift" */,
 				C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
+				C8A0C71E2C5A5A2500E225EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = C89839082C59C4C600216F05 /* Products */;
 			projectDirPath = "";
@@ -292,6 +299,7 @@
 				C89839382C59FA5800216F05 /* ParkingDetailView.swift in Sources */,
 				C89839462C5A373900216F05 /* MainBottomDrawerView.swift in Sources */,
 				C898393F2C5A218C00216F05 /* Double+twoDigit.swift in Sources */,
+				C8A0C71D2C5A569300E225EC /* BeaconListenerView.swift in Sources */,
 				C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
 				C89839212C59D8E000216F05 /* ParkingMapView.swift in Sources */,
 				C89839412C5A29FF00216F05 /* ParkingSpot.swift in Sources */,
@@ -522,6 +530,14 @@
 				minimumVersion = 1.5.4;
 			};
 		};
+		C8A0C71E2C5A5A2500E225EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -564,6 +580,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C89839392C59FB0000216F05 /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
 			productName = SwiftUINavigationCore;
+		};
+		C8A0C71F2C5A5A2500E225EC /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8A0C71E2C5A5A2500E225EC /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

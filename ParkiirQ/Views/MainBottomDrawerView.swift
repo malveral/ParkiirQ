@@ -74,8 +74,11 @@ struct MainBottomDrawerView: View {
                                         Button(action: {
                                             selectedParkingLot(parking)
                                         }, label: {
-                                            Image(systemName: SymbolUtilities().getSymbol(.parkingSign))         .padding(14)
-                                                .background(Circle().fill(Color("GrayButton")))
+                                            Image(systemName: SymbolUtilities().getSymbol(.parkingSign))         
+                                                .padding(14)
+                                                .background(Circle()
+                                                    .fill(Color(.tertiarySystemFill))
+                                                )
                                         })
                                         .bold()
                                         .foregroundStyle(.teal)

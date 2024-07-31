@@ -39,8 +39,8 @@ struct OnboardingView: View {
                 
                 FeatureItem(
                     icon: "leaf.fill",
-                    title: "Save the earth",
-                    description: "lorem ipsum"
+                    title: "Berkontribusi dalam menjaga lingkungan",
+                    description: "Dengan mempercepat proses pencarian parkir, emisi yang dikeluarkan ikut berkurang"
                 )
             }
             .frame(maxWidth: .infinity, alignment: .leading)

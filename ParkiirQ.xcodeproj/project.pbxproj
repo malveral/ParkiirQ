@@ -11,6 +11,7 @@
 		833C47AB2C59C889007E0F55 /* SymbolUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47AA2C59C889007E0F55 /* SymbolUtility.swift */; };
 		833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47AC2C59CA22007E0F55 /* DummyTestView.swift */; };
 		833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */; };
+		833C47B62C59CFCA007E0F55 /* ColorWithHexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */; };
 		C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390A2C59C4C600216F05 /* ParkiirQApp.swift */; };
 		C898390D2C59C4C600216F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390C2C59C4C600216F05 /* ContentView.swift */; };
 		C898390F2C59C4C800216F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898390E2C59C4C800216F05 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		833C47AA2C59C889007E0F55 /* SymbolUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolUtility.swift; sourceTree = "<group>"; };
 		833C47AC2C59CA22007E0F55 /* DummyTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTestView.swift; sourceTree = "<group>"; };
 		833C47B22C59CE7A007E0F55 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorWithHexCode.swift; sourceTree = "<group>"; };
 		C89839072C59C4C600216F05 /* ParkiirQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkiirQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C898390A2C59C4C600216F05 /* ParkiirQApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkiirQApp.swift; sourceTree = "<group>"; };
 		C898390C2C59C4C600216F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		833C47B42C59CFB6007E0F55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				833C47B52C59CFCA007E0F55 /* ColorWithHexCode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C89838FE2C59C4C600216F05 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +89,7 @@
 		C89839092C59C4C600216F05 /* ParkiirQ */ = {
 			isa = PBXGroup;
 			children = (
+				833C47B42C59CFB6007E0F55 /* Extensions */,
 				833C47AE2C59CADE007E0F55 /* Components */,
 				833C47A72C59C841007E0F55 /* Utilities */,
 				C89839182C59C5FF00216F05 /* Views */,
@@ -180,8 +191,9 @@
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,
-                C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
-                C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
+				833C47B62C59CFCA007E0F55 /* ColorWithHexCode.swift in Sources */,
+				C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
+				C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
 				C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

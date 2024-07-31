@@ -38,20 +38,7 @@ struct DefaultActionButtonStyle: ButtonStyle {
             .fontWeight(.medium)
             .padding()
             .frame(maxWidth:.infinity)
-            .background(Color.gray)
-            .foregroundStyle(.blue)
-            .cornerRadius(8)
-            .opacity(configuration.isPressed ? 0.8 : 1.0)
-    }
-}
-
-struct FavoriteButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .fontWeight(.medium)
-            .padding()
-            .frame(maxWidth:.infinity)
-            .background(Color.gray)
+            .background(Color("GrayButton"))
             .foregroundStyle(.blue)
             .cornerRadius(8)
             .opacity(configuration.isPressed ? 0.8 : 1.0)

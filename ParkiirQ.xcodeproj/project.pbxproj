@@ -15,6 +15,7 @@
 		C898390D2C59C4C600216F05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898390C2C59C4C600216F05 /* ContentView.swift */; };
 		C898390F2C59C4C800216F05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C898390E2C59C4C800216F05 /* Assets.xcassets */; };
 		C89839122C59C4C800216F05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C89839112C59C4C800216F05 /* Preview Assets.xcassets */; };
+		C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89839192C59C6E300216F05 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C898390C2C59C4C600216F05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C898390E2C59C4C800216F05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C89839112C59C4C800216F05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C89839192C59C6E300216F05 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		C89839182C59C5FF00216F05 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C89839192C59C6E300216F05 /* OnboardingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,7 +180,8 @@
 				833C47A92C59C859007E0F55 /* ButtonStyleUtility.swift in Sources */,
 				833C47AD2C59CA22007E0F55 /* DummyTestView.swift in Sources */,
 				833C47B32C59CE7A007E0F55 /* FavoriteButton.swift in Sources */,
-				C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
+                C898391A2C59C6E300216F05 /* OnboardingView.swift in Sources */,
+                C898390D2C59C4C600216F05 /* ContentView.swift in Sources */,
 				C898390B2C59C4C600216F05 /* ParkiirQApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +319,7 @@
 				DEVELOPMENT_TEAM = V383GK4HDH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find parking lots nearby";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +349,7 @@
 				DEVELOPMENT_TEAM = V383GK4HDH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to find parking lots nearby";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -14,6 +14,12 @@ enum SFSymbol {
     case electricStation
     case markMyLocation
     case reportIssue
+    case motorcycle
+    case car
+    case parkingSign
+    case plus
+    case share
+    case pin
 }
 
 struct SymbolUtilities {
@@ -24,7 +30,7 @@ struct SymbolUtilities {
             
         case .chevronRight:
             return "chevron.forward"
-        
+            
         case .bookmark:
             return "bookmark.fill"
             
@@ -36,9 +42,25 @@ struct SymbolUtilities {
             
         case .reportIssue:
             return "exclamationmark.circle.fill"
+            
+        case .motorcycle:
+            return "Motorcycle"
+            
+        case .car:
+            return "car.fill"
+            
+        case .parkingSign:
+            return "parkingsign"
+            
+        case .plus:
+            return "plus"
+            
+        case .share:
+            return "location.fill"
+            
+        case .pin:
+            return "mappin"
         }
-        
-
     }
 }
 
@@ -57,6 +79,11 @@ struct SymbolUtilities {
         Image(systemName: SymbolUtilities().getSymbol(.markMyLocation)
         )
         Image(systemName: SymbolUtilities().getSymbol(.reportIssue)
+        )
+        Image(SymbolUtilities().getSymbol(.motorcycle))
+        Image(systemName: SymbolUtilities().getSymbol(.car)
+        )
+        Image(systemName: SymbolUtilities().getSymbol(.parkingSign)
         )
     }
 

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct ContentView: View {
     var location = LocationRequest()
@@ -13,6 +14,7 @@ struct ContentView: View {
     @State var locationAuthorized = false
     
     var body: some View {
+
         NavigationStack {
             if !locationAuthorized {
                 Text("Tidak bisa mendapatkan akses lokasi")

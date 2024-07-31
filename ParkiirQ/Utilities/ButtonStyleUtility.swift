@@ -48,7 +48,7 @@ struct DefaultActionButtonStyle: ButtonStyle {
 #Preview {
     
     VStack {
-        Button("Report Issue") {
+        Button("Report an Issue") {
         }
         .buttonStyle(ButtonStyleUtility().getDefaultActionStyle())
         

@@ -51,6 +51,7 @@
 		C89839092C59C4C600216F05 /* ParkiirQ */ = {
 			isa = PBXGroup;
 			children = (
+				C89839182C59C5FF00216F05 /* Views */,
 				C898390A2C59C4C600216F05 /* ParkiirQApp.swift */,
 				C898390C2C59C4C600216F05 /* ContentView.swift */,
 				C898390E2C59C4C800216F05 /* Assets.xcassets */,
@@ -65,6 +66,13 @@
 				C89839112C59C4C800216F05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C89839182C59C5FF00216F05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

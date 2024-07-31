@@ -39,7 +39,7 @@ struct DefaultActionButtonStyle: ButtonStyle {
             .padding()
             .frame(maxWidth:.infinity)
             .background(Color("GrayButton"))
-            .foregroundStyle(.blue)
+            .foregroundStyle(.teal)
             .cornerRadius(8)
             .opacity(configuration.isPressed ? 0.8 : 1.0)
     }
